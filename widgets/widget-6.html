@@ -50,22 +50,22 @@
 
           <ul class="main-nav__list">
             <li>
-              <a href="widgets/widget-1.html">Стоимость компаний</a>
+              <a href="widget-1.html">Стоимость компаний</a>
             </li>
             <li>
-              <a href="widgets/widget-2.html">Рынок криптовалют</a>
+              <a href="widget-2.html">Рынок криптовалют</a>
             </li>
             <li>
-              <a href="widgets/widget-3.html">Обзор рынков</a>
+              <a href="widget-3.html">Обзор рынков</a>
             </li>
             <li>
-              <a href="widgets/widget-4.html">Рынок акций</a>
+              <a href="widget-4.html">Рынок акций</a>
             </li>
             <li>
-              <a href="widgets/widget-5.html">Тепловая карта валют</a>
+              <a href="widget-5.html">Тепловая карта валют</a>
             </li>
             <li>
-              <a href="widgets/widget-6.html">Кросс-курсы валют</a>
+              <a href="widget-6.html">Кросс-курсы валют</a>
             </li>
           </ul>
 
@@ -79,16 +79,38 @@
       
         <section class="login">
           
-          <h2 class="login__title">Авторизация</h2>
+          <h2>Кросс-курсы валют</h2>
+          
+          <p>С виджетом "Кросс-курсы валют" появится возможность отображать котировки в реальном времени по выбранным валютам в сравнении с другими основными валютными парами. Просто выберите нужные вам валюты и создайте свою таблицу курсов в несколько кликов.
 
-          <form class="login-form" action="" method="post">
-            
-            <input class="login-form__input" type="text" placeholder="Корпоративный id">
-            <input class="login-form__input" type="text" placeholder="Ключ">
+</p>
 
-            <button class="login-form__button">Войти</button>
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/currencies/forex-cross-rates/" rel="noopener" target="_blank"><span class="blue-text">Курсы валют</span></a> предоставлены TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-cross-rates.js" async>
+  {
+  "width": 770,
+  "height": 400,
+  "currencies": [
+    "EUR",
+    "USD",
+    "JPY",
+    "GBP",
+    "CHF",
+    "AUD",
+    "CAD",
+    "NZD",
+    "CNY"
+  ],
+  "locale": "ru"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
 
-          </form>
+
 
         </section>
 

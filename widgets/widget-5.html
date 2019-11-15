@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>R—Analitics. | Real Time Trade Data</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="page-illustation"></div>
+    <div class="page-content">
+      
+
+      <header class="main-header">
+
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="img/logo.png">
+        </a>
+        <a class="main-header__login" href="">Вход</a>
+        <a class="main-header__main-nav-toggler" href="">Меню</a>
+
+        <nav class="main-nav  visually-hidden">
+
+          <span class="main-nav__title">Меню</span>
+          
+          <input type="search" placeholder="Выполнить поиск">
+          
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Рынок</a>
+            </li>
+            <li>
+              <a href="">Сервис</a>
+            </li>
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+            <li>
+              <a href="">О проекте</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list">
+            <li>
+              <a href="widget-1.html">Стоимость компаний</a>
+            </li>
+            <li>
+              <a href="widget-2.html">Рынок криптовалют</a>
+            </li>
+            <li>
+              <a href="widget-3.html">Обзор рынков</a>
+            </li>
+            <li>
+              <a href="widget-4.html">Рынок акций</a>
+            </li>
+            <li>
+              <a href="widget-5.html">Тепловая карта валют</a>
+            </li>
+            <li>
+              <a href="widget-6.html">Кросс-курсы валют</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <main>
+
+        <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
+      
+        <section class="login">
+          
+          <h2>Тепловая карта валют</h2>
+          
+          <p>Виджет "Тепловая карта валют" предоставляет краткий обзор активности рынка Форекс. Он позволит вам определить сильные и слабые валютные пары в реальном времени, а также сравнить их с другими валютами. Этот инструмент поможет как с выбором торговых стратегий, так и с поиском подходящего момента для успешной сделки. Создавайте индивидуальные таблицы курсов в несколько кликов, выбрав нужные вам валюты. Чтобы ваши пользователи смогли увидеть этот виджет, просто скопируйте код для вставки, как только настроите всё, как вам нужно.</p>
+
+          <!-- TradingView Widget BEGIN -->
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/currencies/forex-heat-map/" rel="noopener" target="_blank"><span class="blue-text">Тепловая карта валют</span></a> предоставлена TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-forex-heat-map.js" async>
+            {
+            "width": 770,
+            "height": 400,
+            "currencies": [
+              "EUR",
+              "USD",
+              "JPY",
+              "GBP",
+              "CHF",
+              "AUD",
+              "CAD",
+              "NZD",
+              "CNY"
+            ],
+            "locale": "ru"
+          }
+            </script>
+          </div>
+<!-- TradingView Widget END -->
+        </section>
+
+      </main>
+
+
+    </div>
+  </div>
+</body>
+</html>
