@@ -1,2 +1,3 @@
-# R-Analitics
-R-Analitics Service. Real-Time Trade Data. 
+# R-Analitics. 
+
+## Real-Time Trade Data.
