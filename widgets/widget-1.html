@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>R—Analitics. | Real Time Trade Data</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="page-illustation"></div>
+    <div class="page-content">
+      
+
+      <header class="main-header">
+
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="img/logo.png">
+        </a>
+        <a class="main-header__login" href="">Вход</a>
+        <a class="main-header__main-nav-toggler" href="">Меню</a>
+
+        <nav class="main-nav  visually-hidden">
+
+          <span class="main-nav__title">Меню</span>
+          
+          <input type="search" placeholder="Выполнить поиск">
+          
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Рынок</a>
+            </li>
+            <li>
+              <a href="">Сервис</a>
+            </li>
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+            <li>
+              <a href="">О проекте</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list">
+            <li>
+              <a href="widget-1.html">Стоимость компаний</a>
+            </li>
+            <li>
+              <a href="widget-2.html">Рынок криптовалют</a>
+            </li>
+            <li>
+              <a href="widget-3.html">Обзор рынков</a>
+            </li>
+            <li>
+              <a href="widget-4.html">Рынок акций</a>
+            </li>
+            <li>
+              <a href="widget-5.html">Тепловая карта валют</a>
+            </li>
+            <li>
+              <a href="widget-6.html">Кросс-курсы валют</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <main>
+
+        <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
+      
+        <section class="login">
+          
+          <h2>Стоимость компаний</h2>
+          
+          <p>Виджет показывает обновляемые котировки, простой график и основные фундаментальные данные для одной акции. Это виджет как для общего, так и для детального анализа — отличное решение для веб-сайтов, в том числе и на мобильных устройствах. Вы можете добавить множество вкладок, чтобы обеспечить данные по нескольким акциям, или выбрать "Только график" для более простого вида.
+
+</p>
+
+<div class="tradingview-widget-container">
+  <div id="tv-medium-widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/symbols/AAPL/" rel="noopener" target="_blank"><span class="blue-text">Котировки Apple</span></a>, <a href="https://ru.tradingview.com/symbols/GOOGL/" rel="noopener" target="_blank"><span class="blue-text">Google</span></a> <span class="blue-text">и</span> <a href="https://ru.tradingview.com/symbols/MSFT/" rel="noopener" target="_blank"><span class="blue-text">Microsoft</span></a> от TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+  new TradingView.MediumWidget(
+  {
+  "container_id": "tv-medium-widget",
+  "symbols": [
+    [
+      "Apple",
+      "AAPL "
+    ],
+    [
+      "Google",
+      "GOOGL"
+    ],
+    [
+      "Microsoft",
+      "MSFT"
+    ]
+  ],
+  "greyText": "Котировки предоставлены",
+  "gridLineColor": "#e9e9ea",
+  "fontColor": "#83888D",
+  "underLineColor": "#dbeffb",
+  "trendLineColor": "#4bafe9",
+  "width": "1000",
+  "height": "400",
+  "locale": "ru"
+}
+  );
+  </script>
+</div>
+        </section>
+
+      </main>
+
+
+    </div>
+  </div>
+</body>
+</html>

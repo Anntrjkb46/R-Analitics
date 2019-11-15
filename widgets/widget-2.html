@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>R—Analitics. | Real Time Trade Data</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="page-illustation"></div>
+    <div class="page-content">
+      
+
+      <header class="main-header">
+
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="img/logo.png">
+        </a>
+        <a class="main-header__login" href="">Вход</a>
+        <a class="main-header__main-nav-toggler" href="">Меню</a>
+
+        <nav class="main-nav  visually-hidden">
+
+          <span class="main-nav__title">Меню</span>
+          
+          <input type="search" placeholder="Выполнить поиск">
+          
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Рынок</a>
+            </li>
+            <li>
+              <a href="">Сервис</a>
+            </li>
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+            <li>
+              <a href="">О проекте</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list">
+            <li>
+              <a href="widget-1.html">Стоимость компаний</a>
+            </li>
+            <li>
+              <a href="widget-2.html">Рынок криптовалют</a>
+            </li>
+            <li>
+              <a href="widget-3.html">Обзор рынков</a>
+            </li>
+            <li>
+              <a href="widget-4.html">Рынок акций</a>
+            </li>
+            <li>
+              <a href="widget-5.html">Тепловая карта валют</a>
+            </li>
+            <li>
+              <a href="widget-6.html">Кросс-курсы валют</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <main>
+
+        <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
+      
+        <section class="login">
+          
+          <h2>Виджет рынка криптовалют</h2>
+          
+          <p>Виджет рынка криптовалют — современный инструмент для трейдеров и всех, кто интересуется криптовалютами. В информере представлено большинство из существующих монет, которые отсортированы на основе их рыночной капитализации. Удобный доступ ко всем основным данным — цена закрытия, общее и доступное число монет, объём и процент изменения цены.</p>
+
+          <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com/markets/cryptocurrencies/prices-all/" rel="noopener" target="_blank"><span class="blue-text">Рынки криптовалют</span></a> предоставлены TradingView</div>
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-screener.js" async>
+            {
+            "width": 1000,
+            "height": 490,
+            "defaultColumn": "overview",
+            "screener_type": "crypto_mkt",
+            "displayCurrency": "USD",
+            "colorTheme": "light",
+            "locale": "ru"
+          }
+            </script>
+          </div>
+
+        </section>
+
+      </main>
+
+
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>R—Analitics. | Real Time Trade Data</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+  <div class="page-container">
+    <div class="page-illustation"></div>
+    <div class="page-content">
+      
+
+      <header class="main-header">
+
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="img/logo.png">
+        </a>
+        <a class="main-header__login" href="">Вход</a>
+        <a class="main-header__main-nav-toggler" href="">Меню</a>
+
+        <nav class="main-nav  visually-hidden">
+
+          <span class="main-nav__title">Меню</span>
+          
+          <input type="search" placeholder="Выполнить поиск">
+          
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Рынок</a>
+            </li>
+            <li>
+              <a href="">Сервис</a>
+            </li>
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+            <li>
+              <a href="">О проекте</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list">
+            <li>
+              <a href="widget-1.html">Стоимость компаний</a>
+            </li>
+            <li>
+              <a href="widget-2.html">Рынок криптовалют</a>
+            </li>
+            <li>
+              <a href="widget-3.html">Обзор рынков</a>
+            </li>
+            <li>
+              <a href="widget-4.html">Рынок акций</a>
+            </li>
+            <li>
+              <a href="widget-5.html">Тепловая карта валют</a>
+            </li>
+            <li>
+              <a href="widget-6.html">Кросс-курсы валют</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <main>
+
+        <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
+      
+        <section class="login">
+          
+          <h2>Обзор рынка</h2>
+          
+          <p>Виджет "Обзор рынка" предоставляет возможность следить за деятельностью финансовых рынков в различных секторах. Отлично подойдёт для главной страницы сайта. Виджет можно настроить так, чтобы пользователи переходили на страницу с большим графиком на вашем сайте. Создайте нужные вам списки инструментов и вкладок, установите временной интервал для графика, если нужно, скройте его.
+
+</p>
+
+    <!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://ru.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Котировки</span></a> предоставлены TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-market-overview.js" async>
+  {
+  "colorTheme": "light",
+  "dateRange": "12m",
+  "showChart": true,
+  "locale": "ru",
+  "largeChartUrl": "",
+  "isTransparent": false,
+  "width": "400",
+  "height": "660",
+  "plotLineColorGrowing": "rgba(33, 150, 243, 1)",
+  "plotLineColorFalling": "rgba(33, 150, 243, 1)",
+  "gridLineColor": "rgba(233, 233, 234, 1)",
+  "scaleFontColor": "rgba(120, 123, 134, 1)",
+  "belowLineFillColorGrowing": "rgba(33, 150, 243, 0.12)",
+  "belowLineFillColorFalling": "rgba(33, 150, 243, 0.12)",
+  "symbolActiveColor": "rgba(33, 150, 243, 0.12)",
+  "tabs": [
+    {
+      "title": "Индексы",
+      "symbols": [
+        {
+          "s": "OANDA:SPX500USD",
+          "d": "S&P 500"
+        },
+        {
+          "s": "OANDA:NAS100USD",
+          "d": "Nasdaq 100"
+        },
+        {
+          "s": "FOREXCOM:DJI",
+          "d": "Dow 30"
+        },
+        {
+          "s": "INDEX:NKY",
+          "d": "Nikkei 225"
+        },
+        {
+          "s": "INDEX:DEU30",
+          "d": "DAX Index"
+        },
+        {
+          "s": "OANDA:UK100GBP",
+          "d": "FTSE 100"
+        }
+      ],
+      "originalTitle": "Indices"
+    },
+    {
+      "title": "Фьючерсы",
+      "symbols": [
+        {
+          "s": "CME_MINI:ES1!",
+          "d": "E-Mini S&P"
+        },
+        {
+          "s": "CME:6E1!",
+          "d": "Euro"
+        },
+        {
+          "s": "COMEX:GC1!",
+          "d": "Gold"
+        },
+        {
+          "s": "NYMEX:CL1!",
+          "d": "Crude Oil"
+        },
+        {
+          "s": "NYMEX:NG1!",
+          "d": "Natural Gas"
+        },
+        {
+          "s": "CBOT:ZC1!",
+          "d": "Corn"
+        }
+      ],
+      "originalTitle": "Commodities"
+    },
+    {
+      "title": "Облигации",
+      "symbols": [
+        {
+          "s": "CME:GE1!",
+          "d": "Eurodollar"
+        },
+        {
+          "s": "CBOT:ZB1!",
+          "d": "T-Bond"
+        },
+        {
+          "s": "CBOT:UB1!",
+          "d": "Ultra T-Bond"
+        },
+        {
+          "s": "EUREX:FGBL1!",
+          "d": "Euro Bund"
+        },
+        {
+          "s": "EUREX:FBTP1!",
+          "d": "Euro BTP"
+        },
+        {
+          "s": "EUREX:FGBM1!",
+          "d": "Euro BOBL"
+        }
+      ],
+      "originalTitle": "Bonds"
+    },
+    {
+      "title": "Форекс",
+      "symbols": [
+        {
+          "s": "FX:EURUSD"
+        },
+        {
+          "s": "FX:GBPUSD"
+        },
+        {
+          "s": "FX:USDJPY"
+        },
+        {
+          "s": "FX:USDCHF"
+        },
+        {
+          "s": "FX:AUDUSD"
+        },
+        {
+          "s": "FX:USDCAD"
+        }
+      ],
+      "originalTitle": "Forex"
+    }
+  ]
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+
+        </section>
+
+      </main>
+
+
+    </div>
+  </div>
+</body>
+</html>
