@@ -5,89 +5,97 @@
 <head>
   <meta charset="UTF-8">
   <title>R—Analitics. | Real Time Trade Data</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-
-  <header class="main-header">
-
-    <a class="main-header__logo" href="index.html">
-      <span class="visually-hidden">На главную</span>
-      <img src="img/logo.png">
-    </a>
-    <a class="main-header__login" href="">Вход</a>
-    <a class="main-header__main-nav-toggler" href="">Меню</a>
-    
-
-    <nav class="main-nav">
-
-      <span class="main-nav__title">Меню</span>
+  <div class="page-container">
+    <div class="page-illustation"></div>
+    <div class="page-content">
       
-      <input type="search" placeholder="Выполнить поиск">
+
+      <header class="main-header">
+
+        <a class="main-header__logo" href="index.html">
+          <span class="visually-hidden">На главную</span>
+          <img src="img/logo.png">
+        </a>
+        <a class="main-header__login" href="">Вход</a>
+        <a class="main-header__main-nav-toggler" href="">Меню</a>
+
+        <nav class="main-nav  visually-hidden">
+
+          <span class="main-nav__title">Меню</span>
+          
+          <input type="search" placeholder="Выполнить поиск">
+          
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Рынок</a>
+            </li>
+            <li>
+              <a href="">Сервис</a>
+            </li>
+            <li>
+              <a href="">Новости</a>
+            </li>
+            <li>
+              <a href="">Контакты</a>
+            </li>
+            <li>
+              <a href="">О проекте</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__list">
+            <li>
+              <a href="">Стоимость компаний</a>
+            </li>
+            <li>
+              <a href="">Рынок криптовалют</a>
+            </li>
+            <li>
+              <a href="">Обзор рынков</a>
+            </li>
+            <li>
+              <a href="">Рынок акций</a>
+            </li>
+            <li>
+              <a href="">Тепловая карта валют</a>
+            </li>
+            <li>
+              <a href="">Кросс-курсы валют</a>
+            </li>
+          </ul>
+
+        </nav>
+
+      </header>
+
+      <main>
+
+        <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
       
-      <ul class="main-nav__list">
-        <li>
-          <a href="">Рынок</a>
-        </li>
-        <li>
-          <a href="">Сервис</a>
-        </li>
-        <li>
-          <a href="">Новости</a>
-        </li>
-        <li>
-          <a href="">Контакты</a>
-        </li>
-        <li>
-          <a href="">О проекте</a>
-        </li>
-      </ul>
+        <section class="login">
+          
+          <h2 class="login__title">Авторизация</h2>
 
-      <ul class="main-nav__list">
-        <li>
-          <a href="">Стоимость компаний</a>
-        </li>
-        <li>
-          <a href="">Рынок криптовалют</a>
-        </li>
-        <li>
-          <a href="">Обзор рынков</a>
-        </li>
-        <li>
-          <a href="">Рынок акций</a>
-        </li>
-        <li>
-          <a href="">Тепловая карта валют</a>
-        </li>
-        <li>
-          <a href="">Кросс-курсы валют</a>
-        </li>
-      </ul>
+          <form class="login-form" action="" method="post">
+            
+            <input class="login-form__input" type="text" placeholder="Корпоративный id">
+            <input class="login-form__input" type="text" placeholder="Ключ">
 
-    </nav>
+            <button class="login-form__button">Войти</button>
 
-  </header>
+          </form>
 
-  <main>
+        </section>
 
-    <h1 class="visually-hidden">R-Analitics. — Real Time Trade Data</h1>
-  
-    <section class="login">
-      
-      <h2 class="login__title">Авторизация</h2>
+      </main>
 
-      <form class="login-form" action="" method="post">
-        
-        <input class="login-form__input" type="text" placeholder="Корпоративный id">
-        <input class="login-form__input" type="text" placeholder="Ключ">
 
-        <button class="login-form__button">Войти</button>
-
-      </form>
-
-    </section>
-
-  </main>
-  
+    </div>
+  </div>
 </body>
 </html>
